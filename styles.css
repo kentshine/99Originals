@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: white;
+	background-color: black;
+}
+
+.content {
+	height: 300px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.head {
+	font-family: 'Permanent Marker', cursive;
+	text-transform: uppercase;
+	z-index: 10000;
+	font-size: 4vw;
+}
+
+.img {
+	max-width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+
+/* ----------------------------------------------- */
+/* media query */
+/* ----------------------------------------------- */
+
+@media screen and (min-width: 50em) {
+	body {
+		overflow: hidden;
+	}
+	.content {
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+
+
